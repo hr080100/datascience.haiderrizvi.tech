@@ -1,1 +1,2 @@
-# datascience.haiderrizvi.tech
+# Haider Rizvi Data Science Blogs
+https://datascience.haiderrizvi.tech
