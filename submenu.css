@@ -1,0 +1,83 @@
+body
+{
+    overflow-y: hidden;
+}
+
+.submenu
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateY(-100%) translateX(130px);
+    transition-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 20;
+}
+
+.submenubutton
+{
+    background-color: #051622;
+    margin: 0px;
+    border: 0px;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Comfortaa";
+    text-transform: uppercase;
+    font-size: 12px;
+    width:100%;
+    text-align: center;
+    color: #1ba098;
+    outline: none;
+    transition-duration: 0.4s;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.submenubutton:hover
+{
+    background-color: #deb992;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 12px;
+}
+
+.submenu-active
+{
+    transform: translateY(30%) translateX(130px);
+}
+
+@media screen and (max-width: 768px)
+{
+    .submenu
+    {
+        position: relative;
+        background-color: #051622;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        transform: translateY(0%) translateX(-200%);
+        transition-duration: 0.4s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 30;
+        height: 100%;
+        width: 50%;
+    }
+
+    .submenubutton:hover
+    {
+        background-color: #deb992;
+        border: none;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .submenu-active
+    {
+        transform: translateY(0%) translateX(125%);
+    }
+}
